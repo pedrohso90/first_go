@@ -18,6 +18,6 @@ jobs:
       env:
         GOPATH: $GOPATH/area_of_a_square
     - name: Test
-      run: go test -o ./area_of_a_square/main.go
+      run: go test main
       env:
         GOPATH: $GOPATH/area_of_a_square
