@@ -3,7 +3,7 @@ on:
   push:
     branches: [ develop ]
     paths:
-    - 'area_of_a_square/*'
+    - 'area_of_a_square/**'
   pull_request:
     branches: [ develop ]
 defaults:
