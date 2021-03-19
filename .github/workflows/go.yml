@@ -14,6 +14,6 @@ jobs:
       with:
         go-version: 1.15
     - name: Build
-      run: go build main
-      env:
-        GOPATH: /home/runner/work/first_go/first_go/area_of_a_square
+      run: |
+        cd area_of_a_square
+        go build main.go
