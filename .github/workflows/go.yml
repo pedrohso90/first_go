@@ -17,3 +17,4 @@ jobs:
       run: |
         cd area_of_a_square
         go build main.go
+        ls -lht
