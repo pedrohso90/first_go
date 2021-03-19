@@ -1,4 +1,4 @@
-name: Go
+name: area_of_a_square
 on:
   push:
     branches: [ develop ]
