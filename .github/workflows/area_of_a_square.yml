@@ -18,6 +18,5 @@ jobs:
         go-version: 1.15
     - name: Build
       run: |
-        cd area_of_a_square
         go build main.go
         ls -lht
