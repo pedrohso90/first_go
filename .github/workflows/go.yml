@@ -14,6 +14,6 @@ jobs:
       with:
         go-version: 1.15
     - name: Build
-      run: go build -v main area_of_a_square
+      run: go build -o area_of_a_square/main.go
     - name: Test
-      run: go test -v main area_of_a_square
+      run: go test -o area_of_a_square/main.go
