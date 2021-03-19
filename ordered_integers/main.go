@@ -3,13 +3,13 @@ package main
 import "fmt"
 import "sort"
 
-func orderedIntegers(){
-	fmt.Println("Sorting integers...")
-	sorting := []int{4, 10, 2, 3, 1}
+func orderedIntegers(sorting[]int) {
 	sort.Ints(sorting)
-	fmt.Println(sorting)
 }
 
 func main(){
-	orderedIntegers()
+	numbers := []int{4, 10, 2, 3, 1}
+	orderedIntegers(numbers)
+	fmt.Println("Sorting integers...")
+	fmt.Println(numbers)
 }
