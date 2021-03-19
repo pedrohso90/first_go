@@ -16,8 +16,4 @@ jobs:
     - name: Build
       run: go build main
       env:
-        GOPATH: $GOPATH/area_of_a_square
-    - name: Test
-      run: go test main
-      env:
-        GOPATH: $GOPATH/area_of_a_square
+        GOPATH: /home/runner/work/first_go/first_go/area_of_a_square
