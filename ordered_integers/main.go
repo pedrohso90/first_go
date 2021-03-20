@@ -8,8 +8,8 @@ func orderedIntegers(sorting[]int) {
 	sort.Ints(sorting)
 }
 
-func biggerNumber(bigger[]int) {
-	bigger[len(bigger)-1] 
+func biggerNumber(bigger[]int) { 
+	b := bigger[len(bigger)-1] 
 }
 
 // function main
