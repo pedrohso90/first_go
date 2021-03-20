@@ -8,12 +8,14 @@ func orderedIntegers(sorting[]int) {
 	sort.Ints(sorting)
 }
 
+func biggerNumber(bigger[]int) {
+	bigger := numbers[len(numbers)-1] 
+}
+
 // function main
 func main(){
 	numbers := []int{4, 10, 2, 3, 1}
 	orderedIntegers(numbers)
-	fmt.Println("Sorting integers...")
-	fmt.Println(numbers)
-	bigger := numbers[len(numbers)-1]
-	fmt.Println("Bigger number is: ", bigger)
+	biggerNumber(numbers)
+	fmt.Println("Sorting integers: ", mumbers, "Bigger number: ", bigger)
 }
