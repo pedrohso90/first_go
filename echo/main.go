@@ -7,8 +7,6 @@ import (
 )
 
 func main(){
-	p := os.Args[1:]
-	s := strings.Join(p,"")
-	fmt.Println("array: ", p)
-	fmt.Println("string: ", s)
+	fmt.Println("array: ", os.Args[1:])
+	fmt.Println("string: ", strings.Join(os.Args[1:], ", "))
 }
