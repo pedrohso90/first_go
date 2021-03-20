@@ -6,7 +6,7 @@ import (
 )
 
 // function ordered and bigger number
-func sortGetMaxArrayNumber(aSort []int) (int, []int) {
+func SortGetMaxArrayNumber(aSort []int) (int, []int) {
 	sort.Ints(aSort)
 	maxNumber := aSort[len(aSort)-1]
 	return int(maxNumber), aSort
@@ -18,7 +18,7 @@ func main() {
 
 	var maxNumber int
 
-	maxNumber, numbers = sortGetMaxArrayNumber(numbers)
+	maxNumber, numbers = SortGetMaxArrayNumber(numbers)
 
 	fmt.Println("Integers sorted: ", numbers)
 
