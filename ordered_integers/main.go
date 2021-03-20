@@ -9,14 +9,14 @@ import (
 func sortGetMaxArrayNumber(aSort []int) (int, []int) {
 	sort.Ints(aSort)
 	maxNumber := aSort[len(aSort)-1]
-	return maxNumber, aSort
+	return int(maxNumber), aSort
 }
 
 // function main
 func main() {
 	numbers := []int{4, 10, 2, 3, 1}
 
-	var maxNumber int = 0
+	var maxNumber int
 
 	maxNumber, numbers = sortGetMaxArrayNumber(numbers)
 
