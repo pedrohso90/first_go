@@ -7,6 +7,13 @@ import (
 )
 
 func main(){
-	fmt.Println("array: ", os.Args[1:])
-	fmt.Println("string: ", strings.Join(os.Args[1:], ", "))
+	p := os.Args[1:]
+    s := strings.Join(os.Args[1:], ", ")
+	if len(os.Args) > 1 {
+		fmt.Println("array: ", p)
+		fmt.Println("string: ", s)
+	} else {
+		fmt.Println("cannot be empty")
+		os.Exit(1)
+	}
 }
