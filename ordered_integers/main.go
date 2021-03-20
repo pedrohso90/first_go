@@ -14,7 +14,8 @@ func biggerNumber(bigger[]int) {
 
 // function main
 func main(){
-	numbers := []int{4, 10, 2, 3, 1}
+	numbers := []int{4, 10, 2, 3, 1} 
+	var bigger int
 	orderedIntegers(numbers)
 	biggerNumber(numbers)
 	fmt.Println("Sorting integers: ", numbers, "Bigger number: ", bigger)
