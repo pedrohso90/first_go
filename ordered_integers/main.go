@@ -10,6 +10,7 @@ func orderedIntegers(sorting[]int) {
 
 func biggerNumber(bigger[]int) { 
 	b := bigger[len(bigger)-1] 
+	return b
 }
 
 // function main
