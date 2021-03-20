@@ -14,4 +14,5 @@ func main(){
 	orderedIntegers(numbers)
 	fmt.Println("Sorting integers...")
 	fmt.Println(numbers)
+	:= numbers[len(numbers)-1]
 }
