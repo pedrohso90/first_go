@@ -21,9 +21,10 @@ jobs:
         go-version: ${{ matrix.go-version }}
     - name: build
       run: |
-        env GOOS=linux GOARCH=amd64 go build -o main user-limit-toggle.go 
-        rm -rf user_limit_toggle.zip
-        zip -j user_limit_toggle.zip main
+        ls -l
+        env GOOS=linux GOARCH=amd64 go build -o main main.go 
+        rm -rf main.zip
+        zip -j main.zip main
     # - name: Checkout 
       # uses: actions/checkout@v2
       # with:
