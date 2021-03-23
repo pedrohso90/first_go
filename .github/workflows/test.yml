@@ -23,8 +23,9 @@ jobs:
       run: |
         ls -l
         env GOOS=linux GOARCH=amd64 go build -o main main.go 
-        rm -rf main.zip
-        zip -j main.zip main
+        
+# rm -rf main.zip
+# zip -j main.zip main
     # - name: Checkout 
       # uses: actions/checkout@v2
       # with:
