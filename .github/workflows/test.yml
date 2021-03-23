@@ -1,0 +1,38 @@
+name: Deploy Lambda Test
+on:
+  push:
+      branches: [ develop ]
+defaults:
+  run:
+    working-directory: ordered_integers
+jobs:
+  ci:
+    strategy:
+      matrix:
+        go-version: [ 1.15.x ]
+        os: [ ubuntu-latest ]
+    runs-on: ${{ matrix.os }}
+    steps:
+    - name: Install Go
+      uses: actions/setup-go@v2
+      with:
+        go-version: ${{ matrix.go-version }}
+    - name: build
+      run: |
+        env GOOS=linux GOARCH=amd64 go build -o main user-limit-toggle.go 
+        rm -rf user_limit_toggle.zip
+        zip -j user_limit_toggle.zip main
+    # - name: Checkout 
+      # uses: actions/checkout@v2
+      # with:
+        # repository: ps-financial-services/sao-lourenco-environment.git 
+        # ref: $GITHUB_REF
+        # token: ${{ secrets.SL_GITHUB_TOKEN }} 
+    # - name: Repositorio Sao Lourenco
+      # run: |
+        # ls -l 
+        # cd sao-lourenco-environment
+        # cp ../user-limit-toggle.zip user-limit-toggle/user-limit-toggle.zip
+        # git add .
+        # git commit -am "Lambda New Version:$GITHUB_ACTION"
+        # git push origin $GITHUB_REF
