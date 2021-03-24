@@ -2,6 +2,8 @@ name: Deploy Lambda Test
 on:
   push:
     branches: [ develop ]
+    paths:
+    - 'ordered_integers/**'
   pull_request:
     branches: [ develop ]
 defaults:
