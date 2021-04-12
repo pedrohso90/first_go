@@ -1,4 +1,5 @@
 # First project GO
+Project for studies of the go language
 
 ## What we already know?
 
@@ -8,6 +9,7 @@
 - array to string
 - two or more returns
 - function declaration
+- fetch json
 - ...
 
 ## Testing workflows (in progress...)
