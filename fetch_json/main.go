@@ -56,9 +56,11 @@ func fetcher(p string) (string, error) {
 	} else if p == "gender" {
 		err = json.NewDecoder(res.Body).Decode(templ)
 		retval = templ.Value
-	} else {
+	} else if p =="document" {
 		err = json.NewDecoder(res.Body).Decode(templ)
 		retval = templ.Document.Ssn
+	} else {
+		fmt.Printf("not found\n")
 	}
 	return retval, err
 }
