@@ -1,4 +1,5 @@
 # First project GO
+Project for studies of the go language
 
 ## What we already know?
 
