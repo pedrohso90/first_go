@@ -8,6 +8,7 @@
 - array to string
 - two or more returns
 - function declaration
+- fetch json
 - ...
 
 ## Testing workflows (in progress...)
